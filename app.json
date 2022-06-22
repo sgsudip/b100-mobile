@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "B100",
+    "slug": "B100",
+    "privacy": "public",
+    "platforms": ["ios", "android"],
+    "version": "0.1.58",
+    "orientation": "portrait",
+    "icon": "./assets/images/app-logo.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "plugins": ["expo-notifications"],
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.b100method.b100",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "versionCode": 6
+    },
+    "ios": {
+      "buildNumber": "5",
+      "splash": {
+        "image": "./assets/images/splash.png",
+        "resizeMode": "cover"
+      },
+      "bundleIdentifier": "com.b100method.b100",
+      "supportsTablet": false,
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "UIRequiredDeviceCapabilities": ["telephony", "arm64"],
+        "UIUserInterfaceStyle": "Light",
+        "NSPhotoLibraryUsageDescription": "B100 would like to access your photo gallery for uploading images to the app",
+        "NSCameraUsageDescription": ""
+      }
+    }
+  }
+}
